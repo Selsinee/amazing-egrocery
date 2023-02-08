@@ -1,0 +1,38 @@
+<?php
+
+return [
+
+    "Price" => "Price",
+    "Detail" => "Detail",
+    "Cart" => "Cart",
+    "Profile" => "Profile",
+    "Account Maintenance" => "Account Maintenance",
+    "Register" => "Register",
+    "Login" => 'Login',
+    "Logout" => "Logout",
+    "Buy" => "Buy",
+    "NoItem" => "No Items!",
+    "First Name" => "First Name",
+    "Last Name" => "Last Name",
+    "Role" => "Role",
+    "Display Picture" => "Display Picture",
+    "Password" => "Password",
+    "Confirm Password" => "Confirm Password",
+    "Save" => "Save",
+    "Account" => 'Account',
+    "Action" => "Action",
+    "Update Role" => "Update Role",
+    "Delete" => "Delete",
+    "Landing Message" => "Find and Buy your Groceries Here!",
+    "Success" => "Success!",
+    "Checkout Message" => "We will contact you in 1x24 hours",
+    "Go Home" => 'Click here to go to home',
+    'Saved' => "Saved!",
+    "Submit" => "Submit",
+    "Go Register" => "Don't have an account? Click here to register",
+    "Go Login" => "Already have an account? Click here to login",
+    "Gender" => "Gender",
+    "Male" => "Male",
+    "Female" => "Female",
+    "Logout Message" => "Logout Success!"
+];

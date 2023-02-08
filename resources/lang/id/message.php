@@ -1,0 +1,38 @@
+<?php
+
+return [
+
+    "Price" => "Harga",
+    "Detail" => "Detil",
+    "Cart" => "Keranjang",
+    "Profile" => "Profil",
+    "Account Maintenance" => "Pemeliharaan Akun",
+    "Register" => "Daftar",
+    "Login" => 'Masuk',
+    "Logout" => "Keluar",
+    "Buy" => "Beli",
+    "NoItem" => "Tidak ada barang!",
+    "First Name" => "Nama Depan",
+    "Last Name" => "Nama Belakang",
+    "Role" => "Peran",
+    "Display Picture" => "Foto Profil",
+    "Password" => "Sandi",
+    "Confirm Password" => "Konfirmasi Sandi",
+    "Save" => "Simpan",
+    "Account" => 'Akun',
+    "Action" => "Tindakan",
+    "Update Role" => "Ganti Peran",
+    "Delete" => "Buang",
+    "Landing Message" => "Temukan dan Beli Bahan Makanan Anda Di Sini!",
+    "Success" => "Sukses!",
+    "Checkout Message" => "Kami akan menghubungi Anda dalam 1x24 jam",
+    "Go Home" => 'Klik di sini untuk balik ke halaman home',
+    'Saved' => "Berhasil Disimpan!",
+    "Submit" => "Simpan",
+    "Go Register" => "Belum punya akun? Klik di sini untuk mendaftar",
+    "Go Login" => "Sudah memiliki akun? Klik di sini untuk masuk",
+    "Gender" => "Jenis Kelamin",
+    "Male" => "Laki-laki",
+    "Female" => "Perempuan",
+    "Logout Message" => "Keluar Sukses!"
+];
