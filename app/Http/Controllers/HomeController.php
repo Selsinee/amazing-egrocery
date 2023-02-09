@@ -6,6 +6,7 @@ use App\Models\Item;
 use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
@@ -37,6 +38,12 @@ class HomeController extends Controller
         return redirect('/login')->withErrors([
             '*' => 'Wrong Email/Password. Please Check Again.'
         ]);
+    }
+
+    public function changeLanguage(Request $request){
+        session()->put('lang', $request->lang);
+
+        return redirect()->back();
     }
 
     /**

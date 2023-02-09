@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['middleware' => 'auth'], function () {
+Route::group(['middleware' => ['auth', 'lang']], function () {
     Route::get('/logout',[HomeController::class, 'logout']);
     Route::resource('/home', HomeController::class);
     Route::get('detail/{id}', [HomeController::class, 'show']);
@@ -32,18 +32,23 @@ Route::group(['middleware' => 'auth'], function () {
 
 });
 
-Route::group(['middleware' => 'authAdmin'], function () {
+Route::group(['middleware' => ['authAdmin', 'lang']], function () {
     Route::get('update/{id}', [AccountController::class, 'updateRole']);
     Route::post('updaterole', [AccountController::class, 'setRole']);
     Route::get('delete/{id}', [AccountController::class, 'deleteUser']);
     Route::get('/accountmaintenance', [AccountController::class, 'accountmaintenance']);
 });
 
-Route::get('/', function () {
-    return view('landing.index');
-})->name("landing");
-Route::get('/register',[HomeController::class, 'showRegisterPage']);
-Route::get('/login',[HomeController::class, 'showLoginPage']);
-Route::post('/registeruser',[HomeController::class, 'register']);
-Route::post('/loginuser',[HomeController::class, 'login']);
+Route::group(['middleware' => 'lang'], function () {
+    Route::get('/', function () {
+        return view('landing.index');
+    })->name("landing");
+    Route::get('/register',[HomeController::class, 'showRegisterPage']);
+    Route::get('/login',[HomeController::class, 'showLoginPage']);
+    Route::post('/registeruser',[HomeController::class, 'register']);
+    Route::post('/loginuser',[HomeController::class, 'login']);
+    Route::get('/changelang',[HomeController::class, 'changeLanguage']);
+});
+
+
 

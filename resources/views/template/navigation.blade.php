@@ -3,6 +3,16 @@
     <div class="position-relative d-flex flex-row container-fluid">
         <a class="navbar-brand ms-auto me-auto my-2" href="/">Amazing E-Grocery</a>
         <div class="navbar-nav my-2 mx-3 position-absolute top-0 end-0">
+
+            <form action="/changelang" action="POST" class="me-4">
+                @csrf
+                <select class="form-select" aria-label="Default select example" onchange="this.form.submit()" name="lang">
+                    <option selected value="en" {{ session()->get('lang') == 'en' ? 'selected' : '' }}>English</option>
+                    <option value="id" {{ session()->get('lang') == 'id' ? 'selected' : '' }}>Indonesian</option>
+                </select>
+            </form>
+
+
             @auth
                 <form action="{{ url('logout')}}" enctype="multipart/form-data" action="POST">
                     @csrf
