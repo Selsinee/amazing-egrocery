@@ -34,5 +34,6 @@ return [
     "Gender" => "Gender",
     "Male" => "Male",
     "Female" => "Female",
-    "Logout Message" => "Logout Success!"
+    "Logout Message" => "Logout Success!",
+    "Login Fail" => 'Wrong Email/Password. Please Check Again.'
 ];

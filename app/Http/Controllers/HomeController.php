@@ -36,7 +36,7 @@ class HomeController extends Controller
             return redirect('/home');
         }
         return redirect('/login')->withErrors([
-            '*' => 'Wrong Email/Password. Please Check Again.'
+            '*' => trans('message.Login Fail')
         ]);
     }
 

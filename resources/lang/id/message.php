@@ -34,5 +34,6 @@ return [
     "Gender" => "Jenis Kelamin",
     "Male" => "Laki-laki",
     "Female" => "Perempuan",
-    "Logout Message" => "Keluar Sukses!"
+    "Logout Message" => "Keluar Sukses!",
+    "Login Fail" => "Email/Kata Sandi Salah. Silakan Periksa Lagi."
 ];

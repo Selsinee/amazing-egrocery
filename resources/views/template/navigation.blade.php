@@ -7,8 +7,8 @@
             <form action="/changelang" action="POST" class="me-4">
                 @csrf
                 <select class="form-select" aria-label="Default select example" onchange="this.form.submit()" name="lang">
-                    <option selected value="en" {{ session()->get('lang') == 'en' ? 'selected' : '' }}>English</option>
-                    <option value="id" {{ session()->get('lang') == 'id' ? 'selected' : '' }}>Indonesian</option>
+                    <option selected value="en" {{ Config::get('app.locale') == 'en' ? 'selected' : '' }}>English</option>
+                    <option value="id" {{ Config::get('app.locale') == 'id' ? 'selected' : '' }}>Indonesian</option>
                 </select>
             </form>
 
